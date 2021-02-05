@@ -4,7 +4,7 @@
 DESCRIPTION
    Mearkat.co Keypad Test Software
 Date Version: 
-   2/4/2021
+   2/4/2021 v2
 Documentation:
    * Hardware:
         red   = 3.3v 
@@ -57,7 +57,7 @@ void setup()
                                                                         //  pressing the reboot button on your Arduino.
   } //if
 
-  for (int sxInit=0;sxInit<16;sxInit++) {                               //initialize individual keypad keys (required)  /!\ Always loop 0 to <16 even if your product has less buttons.
+  for (int sxInit=0;sxInit<=15;sxInit++) {                              //initialize individual keypad keys (required)  /!\ Always loop 0 to <=15 even if your product has less buttons.
     io.pinMode(sxInit, INPUT_PULLUP);
   } //for
 } //setup
@@ -83,7 +83,7 @@ void loop()                                                              //run r
 
   do {
    
-    for (int sxButton=0;sxButton<16;sxButton++) {                          //read from each possible button location
+    for (int sxButton=0;sxButton<=15;sxButton++) {                         //read from each possible button location SX1509 port 0 - 15
                                                                            //Note: A 12 button keypad (for example a 3x4 configuration) 
                                                                            //        will have buttons press numbers ranging from 1 to 12.
                                                                            //      A 16 button keypad (for example a 4x4 configuration)
