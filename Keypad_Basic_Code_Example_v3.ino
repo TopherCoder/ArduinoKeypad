@@ -77,7 +77,7 @@ void loop()                                                              //Run r
   Serial.print("\n");
   Serial.print("\n");
   Serial.print("--MeerkatDesign.co--------------------------------------\n");
-  Serial.print("Keypad Basic Test Software v2 \n");
+  Serial.print("Keypad Basic Test Software v3 \n");
   Serial.print("--------------------------------------------------------\n");
   Serial.print("\n");
   Serial.print("\n");
