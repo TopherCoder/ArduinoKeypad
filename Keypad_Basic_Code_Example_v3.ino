@@ -100,7 +100,7 @@ void loop()                                                              //Run r
     
       if ( keypadPressed==LOW ) {                                          //If that button has a condition of LOW that means the key is currently PRESSED!
         buttonPressed = sxButton;                                          //Set variable buttonPressed to the number of the key that was pressed (again, generally starting with 1)
-        Serial.print("[]");
+        Serial.print("[" + String(buttonPressed) + "]");
         int counter = 1; 
         do {                                                               //Wait for key to be lifted.
           keypadPressed = io.digitalRead(sxButton);
